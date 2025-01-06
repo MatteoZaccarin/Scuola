@@ -59,3 +59,80 @@ int main(int argc, char *argv[])
 }
 
 //SOL manca una libreria
+
+## primo 
+//Negoita Roberto Marian 4DIT 26/11/2024
+/*Scrivi un programma in C che accetti una lista di stringhe come argomenti da linea di comando e determini:
+Quale stringa contenga il numero massimo di vocali (a, e, i, o, u, sia maiuscole che minuscole). Voglio il numero e anche la stringa.*/
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[])
+{
+	if(argc>1)
+	{
+		int i, j, max=0, conta=0, indice;
+		char n;
+		for(i=1;i<argc;i++)
+		{
+			for(j=0;j<strlen(argv[i]);j++)
+			{
+				n=argv[i][j];
+				if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u')
+				{
+					conta++;
+				}
+				if(n=='A'||n=='E'||n=='I'||n=='O'||n=='U')
+				{
+					conta++;
+				}
+			}
+			if(conta>max)
+			{
+				max=conta;
+				indice=i;
+			}
+			conta=0;
+		}
+		printf("\nla stringa con piu' vocali e' %s con %d vocali", argv[indice], max);
+	}else{
+		printf("\nnessun parametro inserito");
+	}
+	return 0;
+}
+
+//SOL
+
+## secondo
+
+//Negoita Roberto Marian 4DIT 26/11/2024
+/*Scrivi un programma in C che accetti una lista di numeri interi tramite linea di comando e determini:La somma dei numeri primi forniti.*/
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[])
+{
+	int i, j, conta, somma=0;
+	int n;
+	if(argc>1)
+	{
+		for(i=1;i<argc;i++)
+		{
+			n=atoi(argv[i]);
+			for(j=2;j<=n/2;j++)
+			{
+				if(n%j==0)conta++;
+			}
+			if(conta==0)somma=somma+n;
+			conta=0;
+		}
+		printf("la somma dei numeri primi e' %d", somma);
+	}else{
+		printf("\nnessun parametro inserito");
+	}
+	return 0;
+}
+
+//SOL bravo

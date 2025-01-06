@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
         for(int i=1;i<argc;i++) {
             int n=atoi(argv[i]);
 			if (n<=0) {
-                printf("\nErrore: %s non è un numero positivo.", argv[i]);
+                printf("\nErrore: %s non ï¿½ un numero positivo.", argv[i]);
                 }
 			int conta=0;
 			while(n>0) {
@@ -127,7 +127,7 @@ int main(int argc, char* argv[]){
 	printf("\nI numeri primi sono: ");
 	for(int i=0;i<n;i++){
 		int div=2;//il divisore inizializzato a 2
-		int conta=0;//conta che sarà la mia sentinella e verifica la presenza di numeri non primi
+		int conta=0;//conta che sarï¿½ la mia sentinella e verifica la presenza di numeri non primi
 		while(div<=vet[i]/2 && conta==0){// sara' inizializzato a 0 per ogni ciclo
 			if(vet[i]%div==0 ){
 				conta++;
@@ -149,3 +149,5 @@ int main(int argc, char* argv[]){
 	
 	return 0;
 }
+
+//SOL bravo ma non serviva creare il vettore di interi, anche perchÃ¨ non conosci n in compilazione e va nello stack
