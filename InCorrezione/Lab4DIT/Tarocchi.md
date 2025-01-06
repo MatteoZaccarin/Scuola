@@ -14,13 +14,13 @@ int main(int argc,char*argv){
 	for (i=0;numParametri>0;numParametri--){
 		num=atoi(&argv[numParametri]);
 		if(numParametri<0){
-			printf("il numero inserito è negativo");
+			printf("il numero inserito ï¿½ negativo");
 		}
 		else{
 			while(nBit==0){
 				potenza=potenza*2;
 				j++;				//tengo conto del numero di volte in cui ho moltiplicato il 2 come indice della potenza
-				if(potenza>=num){	//se la potenza di 2 è maggiore del numero il numero di bit corrisponde all'indice della potenza
+				if(potenza>=num){	//se la potenza di 2 ï¿½ maggiore del numero il numero di bit corrisponde all'indice della potenza
 					nBit=j;
 				}
 			}
@@ -29,6 +29,8 @@ int main(int argc,char*argv){
 	}
 	return 0;
 }
+
+//SOL nbit va inizializzato, inoltre il while Ã¨ finchÃ¨ Ã¨ diverso da 0
 
 ## Contenuto di TarocchiGruppi.c
 
@@ -43,9 +45,9 @@ int main(int argc,char*argv){
 	int numParametri=strlen(&argv[0]);
 	for (i=0;numParametri>0;numParametri--){
 		num=atoi(&argv[0][numParametri]);
-		if(num==0 || num==1){	//se il numero è binario conteggio un gruppo
+		if(num==0 || num==1){	//se il numero ï¿½ binario conteggio un gruppo
 			contaGruppi++;
-			while(num==argv[numParametri+1]){ //se il numero successivo è uguale lo salto contandolo nel gruppo gia conteggiato
+			while(num==argv[numParametri+1]){ //se il numero successivo ï¿½ uguale lo salto contandolo nel gruppo gia conteggiato
 				numParametri--;
 				}
 			}
@@ -60,6 +62,7 @@ int main(int argc,char*argv){
 	return 0;
 }
 
+//SOL non compila
 ## Contenuto di TarocchiMedia.c
 
 //Luca Tarocchi 19/11/24 Verifica pratica di Tpsit
@@ -82,6 +85,8 @@ int main(int argc,char*argv){
 	return 0;
 }
 
+//SOL hai dichiarato male argv, inoltre cicli da i=0
+
 ## Contenuto di TarocchiPrimi.c
 
 //Luca Tarocchi 19/11/24 Verifica pratica di Tpsit
@@ -100,16 +105,16 @@ int main(int argc,char*argv){
 		
 		for(num;num>7;num++){
 			if(stop==1){
-				return 0;	//se la variabile stop è stata incrementata esco dal ciclo
+				return 0;	//se la variabile stop ï¿½ stata incrementata esco dal ciclo
 			}
 			else{
 				if(valore%num==0){
-					stop++;	//se il modulo di valore e num è diverso da zero il numero non è pari
+					stop++;	//se il modulo di valore e num ï¿½ diverso da zero il numero non ï¿½ pari
 				}
 			}
 		}
 		if(stop==0){
-			vet[j]=valore; 	//se dopo aver concluso il ciclo la variabile stop è a zero il numero è primo
+			vet[j]=valore; 	//se dopo aver concluso il ciclo la variabile stop ï¿½ a zero il numero ï¿½ primo
 			j++;
 		}
 	}
@@ -119,3 +124,5 @@ int main(int argc,char*argv){
 	}
 	return 0;
 }
+
+//SOL troppi errori di compilazione

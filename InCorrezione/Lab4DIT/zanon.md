@@ -88,6 +88,7 @@ int main(int argc, char* argv[]){
 	return 0;
 }
 
+//SOL devi dividere per i-1, non mi stampi le più grandi
 ## Contenuto di zanonPrimi.c
 
 //Gianluca Zanon 4 dit es2
@@ -116,3 +117,5 @@ int main(int argc, char* argv[]){
 	}
 	return 0;
 }
+
+//SOL non può andare senza un loop

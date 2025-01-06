@@ -30,6 +30,7 @@ int main(int argc, char*argv[]){
 	return 0;
 }
 
+//SOL serve un loop
 ## Contenuto di variolaMedia.c
 
 //Mattia Variola 4DIT 19/11/24
@@ -57,7 +58,7 @@ int main(int argc, char*argv[]){
 		}	
 		int media=somma/(argc);        //Calcolo la media dei caratteri dividento la somma dei caratteri di tutti i parametri con il numero di parametri.
 		printf("La media della lunghezza delle stringhe e di %d caratteri.\n", media);
-		printf("La parola più lunga e compsta da %d lettere, ed e la parola %c\n", max, pMax);
+		printf("La parola piï¿½ lunga e compsta da %d lettere, ed e la parola %c\n", max, pMax);
 	}
 	else
 	{
@@ -97,3 +98,5 @@ int main(int argc, char*argv[]){
 	}
 	return 0;
 }
+
+//SOl accedi a celle di memoria non usabili

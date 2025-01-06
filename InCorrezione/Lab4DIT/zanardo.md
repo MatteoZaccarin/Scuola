@@ -4,7 +4,7 @@
 
 //Zanardo Gioele 4DIT
 //ES2
-//fatto con più parametri
+//fatto con piï¿½ parametri
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -62,6 +62,8 @@ int main(int argc, char* argv[]){
 	return	0;
 }
 
+//SOL bravo
+
 ## Contenuto di zanardoPrimi.c
 
 // Zanardo Gioele 4DIT 
@@ -86,4 +88,6 @@ int main(int argc, char* argv[]){
 	}
 	return 0;
 }
+
+//SOL attento che 1 non Ã¨ primo e neanche 4
 	

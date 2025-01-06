@@ -59,6 +59,7 @@ int main(int argc, char* argv[])
 	return 0;			
 	}	
 		
+//SOL lo fai a mano, bastava fare un ciclo in cui dividevi per due
 
 ## Contenuto di tofanMedia.c
 
@@ -100,6 +101,8 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
+//SOL bravo
+
 ## Contenuto di tofanPrimi.c
 
 //TOFAN DAVID 4DIT ES2
@@ -135,3 +138,5 @@ int main(int argc, char* argv[])
 	}
 	return 0;
 }
+
+//SOL non basta questo per controllare se un numero è primo
