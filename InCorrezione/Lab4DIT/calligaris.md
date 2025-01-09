@@ -45,10 +45,11 @@ int main (int argc, char* argv[]){
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 #include <math.h>
 
- primo(int n) {
+bool primo(int n) {
     if (n <= 1) return false;
     if (n == 2) return true;
     if (n % 2 == 0) return false; 

@@ -137,6 +137,7 @@ int main(int argc, char* argv[])
 			while(Divisore<=arr[i]/2 && contaD==0)
 			{
 				Divisore++;
+				
 			}
 			
 			if(contaD==0) // Se contaD rimane 0, il numero � primo (non � stato trovato alcun divisore)

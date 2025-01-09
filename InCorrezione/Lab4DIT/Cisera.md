@@ -113,7 +113,7 @@ int main(int argc, char* argv[])
 			int num=atoi(argv[i]);
 			int divisore=2;
 			int verifica=1;
-			while(divisore<num/2 && verifica==1)
+			while(divisore<=num/2 && verifica==1)
 			{
 				if(num%divisore==0)
 				{

@@ -153,7 +153,7 @@ int main(int argc, char* argv[])
 	else
 	{
 		printf("i numeri primi sono: ");
-		for(int i=1; i<argc; i++)
+		for(int i=1; i<=argc; i++)
 		{
 			int n=atoi(argv[i]);
 			//printf("\t%d", n);

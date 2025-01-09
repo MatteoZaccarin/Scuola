@@ -11,7 +11,7 @@
 
 int bit_number (int n);
 
-int main (int argc, char* argv){
+int main (int argc, char* argv[]){
 	//controllo che siano stati forniti i parametri
 	if(argv==1){
 		printf("\nParametri non forniti");
@@ -181,7 +181,7 @@ int main (int argc, char* argv){
 	//controllo se sono stati passati parametri
 	if(argc==1){
 		printf("\nInserire parametri");
-		return 1;
+		
 	}
 	else{
 		int primo, i;
