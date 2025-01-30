@@ -31,7 +31,7 @@ int main(){
 
     //stampo invertito
     for(int i=0;i<n;i++){
-        cout<<array[n-i-1]<<" ";
+        cout<<invertito[i]<<" ";
     }
     cout<<endl;
 }
