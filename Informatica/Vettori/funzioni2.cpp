@@ -53,7 +53,13 @@ int main(){
                 min=array[i];
         }
     }
-    cout<<"Il massimo è "<<max<<" e il minimo è "<<min<<endl;
+
+    if(n>=1){
+        cout<<"Il massimo è "<<max<<" e il minimo è "<<min<<endl;
+    }else{
+        cout<<"non c'è nè massimo nè minimo"<<endl;
+    }
+    
     
     for(int i=0;i<n;i++){
        if(array[i]%2==0)

@@ -1,0 +1,24 @@
+1)Scrivi un programma in C++ che:
+Utilizza un vettore di dimensione fissa (ad esempio DIM = 1024) per memorizzare i numeri pari inseriti dall'utente.
+Continua a chiedere all'utente di inserire numeri interi fino a quando:
+    -Il vettore è pieno, oppure
+    -L'utente inserisce -1.
+
+Per ogni numero inserito, verifica se è pari (con una funzione). Se è pari, memorizzalo nel vettore.
+Alla fine del programma, stampa tutti i numeri pari memorizzati nel vettore.
+
+2)Scrivi un programma in C++ che:
+Utilizza un vettore di dimensione fissa (ad esempio DIM = 1024).
+Chiede all'utente di inserire un intero positivo n (minore di DIM) e dopodichè n interi e li memorizza nel vettore.
+Calcola la somma di tutti gli elementi del vettore utilizzando una funzione.
+Stampa la somma.
+
+3)Scrivi un programma in C++ che:
+Utilizza un vettore di dimensione fissa (ad esempio DIM = 1024).
+Chiede all'utente di inserire un intero positivo n (minore di DIM) e dopodichè n interi e li memorizza nel vettore.
+Chiede all'utente di inserire un numero da cercare nel vettore.
+utilizza una funzione per verificare se il numero è presente nel vettore.
+Stampa un messaggio che indica se il numero è stato trovato o meno.
+
+Salvare i file come cognomeNumero.cpp
+Inserire i commenti con cognome nome e consegna esercizio.
